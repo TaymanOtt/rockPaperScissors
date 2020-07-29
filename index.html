@@ -5,6 +5,7 @@
     </head>
     <body>
         <script>
+            let m = prompt("Rock, Paper, or Scissors?");
             function computerPlay(playerSelection,computerSelection){
                 if (playerSelection == computerSelection){
                     return "Draw";
@@ -28,7 +29,7 @@
                 }
                 
             }
-            console.log(computerPlay("rock", "Paper"));
+            console.log(computerPlay(m, "Paper"));
         </script>
     </body>
 </html>
