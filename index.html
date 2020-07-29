@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "UTF-8">
+    </head>
+    <body>
+        <script>
+            function computerPlay(playerSelection,computerSelection){
+                if (playerSelection == computerSelection){
+                    return "Draw";
+                } else
+                if (playerSelection == 'rock'){
+                    if (computerSelection == 'paper'){
+                    return "You Lose";
+                    } else
+                    { return "You Win";}
+                }else
+                if (playerSelection == 'paper'){
+                    if (computerSelection == 'scissors'){
+                        return "You Lose";
+                    } else {return "You win";}
+
+                }else
+                if(playerSelection == 'scissors'){
+                    if (computerSelection == 'rock'){
+                        return "You Lose";
+                    } else {return "you win";}
+                }
+                
+            }
+            console.log(computerPlay("rock", "Paper"));
+        </script>
+    </body>
+</html>
